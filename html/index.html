@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta content="yes" name=" apple-mobile-web-app-capable"/>
+    <meta content="no" name="apple-touch-fullscreen"/>
+    <meta content="black" name=" apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/base.min.js"></script>
+
+    <link rel="stylesheet" href="../css/index.css"/>
+
+    <title>情人节</title>
+
+</head>
+
+<body>
+
+<img src="../image/1.jpg" style="width: 100vw;display: block"/>
+<img src="../image/3.png" class="ys"/>
+<input type="tel" placeholder="请输入福建移动号码" maxlength="11" class="tel"/>
+
+<div flex="main:justify cross:center" class="box">
+
+    <!--1314-->
+    <label class="a1 on" flex="cross:center main:center">
+        <img src="../image/4.png" class="aixin"/>
+        13.14元
+    </label>
+
+    <!--50-->
+    <label flex="cross:center main:center">50元</label>
+
+    <!--100-->
+
+    <label flex="cross:center main:center">100元</label>
+
+    <!--自定义-->
+    <label for="jinezdy" flex="cross:center main:center" class="a2">
+        <span>自定义</span>
+        <input type="tel" name="chongzhi" id="jinezdy"/>
+    </label>
+
+
+
+</div>
+
+
+<div class="zffs">
+
+    <!--微信支付-->
+        <div class="wx" flex="cross:center main:justify">
+            <div flex="cross:center">
+                <img src="../image/wx.png" alt="" class="tubiao"/>微信支付
+            </div>
+            <div class="aixin2"></div>
+            <div class="quan"></div>
+        </div>
+
+    <!--银联支付-->
+        <div class="wx" flex="cross:center main:justify">
+            <div flex="cross:center">
+                <img src="../image/yl.png" alt="" class="tubiao"/>银联支付
+            </div>
+            <div class="aixin2"></div>
+            <div class="quan"></div>
+        </div>
+</div>
+<div class="ljzf" flex="cross:center main:center">
+    立即支付
+</div>
+
+<!--活动规则-->
+<div class="mc d-none" flex="cross:center main:center">
+    <div class="hdgz" flex="dir:top cross:center">
+        <div flex="main:justify cross:center" style="padding: .47rem .46rem .59rem .5rem">
+            <div class="hdgzLeft"></div>
+            <h1 class="h-1">活动规则</h1>
+            <div class="hdgzRight"></div>
+        </div>
+
+        <div style="padding: 0 .46rem" class="hdgz-2">
+            <p>1、活动时间：2月14日--2月16日</p>
+            <p>2、活动期间用户为自己的好友/亲人/爱人充值13.14元，即可获得1G流量日包奖励；</p>
+            <p>3、活动期间内用户最多可获赠3次1G流量日包，流量生效期间不可重复受理；</p>
+            <p>4、1G流量日包生效后有效期为24小时，内含流量在24小时内使用有效。超过期限（或使用完内含流量），套餐及内含流量同时失效；</p>
+            <p>5、旧版wap套餐取消后方可参与本活动。若客户为预销户状态、或随E行等状态异常客户，也无法参与本活动。</p>
+        </div>
+        <div class="zhidaole" flex="cross:center main:center">
+            知道了
+        </div>
+    </div>
+</div>
+
+<!--活动规则-->
+<!--输入手机号-->
+
+<div class="shoujihao d-none" flex="dir:top cross:center">
+    <input type="tel" placeholder="请输入您的手机号码" maxlength="11" class="tel2"/>
+    <p>获赠流量将通过该号码领取，受理结果将在完成扣款后，以短信形式通知。</p>
+    <div class="sj" flex="main:justify">
+        <div class="sj-left" flex="cross:center main:center">取消</div>
+        <div class="sj-right" flex="cross:center main:center">确定</div>
+    </div>
+</div>
+<!--输入手机号-->
+
+<!--手机号不一致-->
+<div class="shoujihaobyz" flex="dir:top cross:center">
+    <p>您输入的手机号码与充值手机号码一致，无法获赠流量。继续充值吗？</p>
+    <div class="sjbyz" flex="main:justify">
+        <div class="sjbyz-left" flex="cross:center main:center">取消</div>
+        <div class="sjbyz-right" flex="cross:center main:center">确定</div>
+    </div>
+</div>
+<!--手机号不一致-->
+
+
+
+<script src="../js/index.js"></script>
+</body>
+</html>
