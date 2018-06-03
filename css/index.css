@@ -11,6 +11,7 @@
     right: 0;
     height: .46rem;
     display: block;
+
 }
 .tel::-webkit-input-placeholder{
   color: #f6d9e3;
@@ -184,6 +185,7 @@
     font-size: .32rem;
     margin: 0 .2rem;
 }
+
 .hdgz-2>p{
     margin-bottom: .05rem;
 }
@@ -200,12 +202,20 @@
 .zhidaole:active{
     box-shadow: inset 0 0 0 rgba(232,120,172,1);
     transform: translateY(3px);
+    background-color: rgba(232,120,172,1);
 }
 /*活动规则*/
 
 /*输入手机号*/
+.sjh{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .shoujihao{
-    height: 30vh;
     width: 80vw;
     background-color: white;
     border: 1px solid pink;
@@ -230,6 +240,24 @@
     color: #f7699e;
     width: 80%;
 }
+#ooo{
+font-size: .22rem;
+    color: red;
+    margin: -.30rem 0 .30rem .2rem;
+}
+#tishi{
+    font-size: .22rem;
+    color: red;
+    margin:.1rem 0 -.22rem 0;
+    width: 100%;
+}
+
+#ppp{
+    font-size: .22rem;
+    color: red;
+    margin: -.30rem 0 .30rem .45rem;
+}
+
 .sj{
     height: 1.2rem;
     width: 100%;
@@ -252,8 +280,16 @@
 }
 /*输入手机号*/
 
+/*不一致*/
+.byz{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .shoujihaobyz{
-    height: 22vh;
     width: 80vw;
     background-color: white;
     border: 1px solid pink;
@@ -261,7 +297,6 @@
     position: fixed;
     top: 30%;
     left: 10%;
-    display: none;
 }
 
 .shoujihaobyz>p{

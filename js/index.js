@@ -20,29 +20,63 @@ $(function(){
         $(".mc").addClass("d-none");
     });
 
-
     $('.ljzf').click(function(){
             var a =  $('.tel').val();
-            var sz = /^\d+(\.{1}\d+)?$/;
-        if(
-            a==sz
-        ){
-            $('.tel2').val(a);
-            $('.shoujihao').removeClass("d-none");
+            var sz = /^1[3|4|5|6|7|8|9][0-9]{9}$/;
+        if(sz.test(a)){
+                $('.sjh').removeClass("d-none");
+                $('#ooo').addClass("d-none");
         }else{
-
+            $('#ooo').removeClass("d-none");
         }
     });
 
-    $('.sj-right').click(function(){
-        if($(".tel2").val().length==11){
-            $('.shoujihao').addClass("d-none");
+    $('.sj-left').click(function () {
+        $('.sjh').addClass("d-none");
+    });
+
+    $('.sj-right').click(function () {
+        var b = $(".tel").val();
+        var a = $('.tel2').val();
+        var sz = /^1[3|4|5|6|7|8|9][0-9]{9}$/;
+
+        if(a===b){
+            $(".byz").removeClass("d-none");
+            $(".sjh").addClass("d-none");
         }else{
-            alert("请输入正确的手机号码")
+            if ($(".tel2").val().length == 11) {
+                if(a===b){
+                }if (sz.test(a)) {
+                    if ($(a === b)){
+                        $('.sjh').addClass("d-none");
+                        window.open('../html/demo1.html');
+                        window.open('../html/demo.html');
+                        $('#ppp').addClass('d-none');
+                    }
+                else{
+                        $("byz").removeClass("d-none");
+                        $("sjh").addClass("d-none");
+                    }
+                } else {
+                    $('#ppp').removeClass("d-none");
+                }
+            } else {
+                $('#ppp').removeClass("d-none");
+            }
         }
     });
+
+
+
+    $(".sjbyz-right").click(function(){
+        $('.byz').addClass("d-none");
+        window.open('../html/demo.html')
+    });
+
+    $('.sjbyz-left').click(function(){
+        $('.byz').addClass("d-none");
+    });
+
+
 
 });
-
-
-
